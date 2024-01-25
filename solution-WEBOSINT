@@ -5,7 +5,137 @@ Task 2  Whois Registration :
 What is the name of the company the domain was registered with? 
 check the demain in lookup.icann.org and search for name of the company the domain was registered
 Abuse:
-Name: NAMECHEAP INC <span style="color:blue">This is blue text</span>
-
+Name: NAMECHEAP INC 
 Email: abuse@namecheap.com 
 Phone: tel:+1.9854014545
+that's it we found it , it's NAMECHEAP INC 
+What phone number is listed for the registration company? (do not include country code or special characters/spaces) ? 
+in the same information we find Phone: tel:+1.9854014545 so the answer is : 
+9854014545
+What is the first nameserver listed for the site? try to take a look at block DOMAIN information : you will find
+Nameservers:
+NS1.BRAINYDNS.COM
+NS2.BRAINYDNS.COM
+so the first is : NS1.BRAINYDNS.COM
+What is listed for the name of the registrant? tryt to check block that contain contact information 
+Registrant:
+Handle: redacted for privacy
+Name: Redacted for Privacy 
+so as we see the handle :  redacted for privacy
+What country is listed for the registrant?
+for this research we can use this https://www.whoxy.com/republicofkoffee.com so we will found those informations : 
+Name: Withheld for Privacy Purposes (1.43 million domains)  UPDATED
+Company: Privacy service provided by Withheld for Privacy ehf (66.1 million domains)  UPDATED
+Email: 7f98b237684c413da611226ee6639fdb.protect@withheldforprivacy.com  UPDATED
+Country: Iceland (19.8 million domains from Iceland for $750)
+Nameservers: dns1.registrar-servers.com, dns2.registrar-servers.com
+Status: addPeriod, clientTransferProhibited
+so the county is : Iceland
+Task 3  Ghosts of Websites Past : 
+What is the first name of the blog's author?
+Now that we have the basic information related to the website extracted from the publically available tool. Having said that, let's find out what the website looks like even though the website does not exist.
+We are going to utilize the waybackmachine which holds archives of websites at different times of the year.
+We need to find the name of the author for the very first blog that was written on the website.
+Navigate to the very first archive we find on the timeline of the wayback machine check this link ( https://web.archive.org/)
+after that go ahead for the first We need to find the name of the author for the very first blog that was written on the website
+Navigate to the very first archive we find on the timeline of the wayback machine
+https://web.archive.org/web/20160414005938/http://www.republicofkoffee.com/index.php/2015/06/26/cafe-zorba-chosun-university-area/
+so the First Blog of the website by Steve that's it 
+What city and country was the author writing from?
+Next, we need to find the country from where the author is writing. Time to test our Recon skills. We know the city name and the place as mentioned in the blog, 
+doing a little research we find the country
+Country Name : Gwangju, South Korea
+
+[Research] What is the name (in English) of the temple inside the National Park the author frequently visits?
+Navigate to the next blog , where we need to find out the name of the temple the author visits
+
+
+Blog on the National Park
+Doing a little recon on the places mentioned in the blog we find the temple name as seen below
+
+Temple Name: Jeungsimsa Temple
+
+Task 4  Digging into DNS : 
+What was RepublicOfKoffee.com's IP address as of October 2016?
+Till now we have gathered enough information that could be used to draw some conclusions. We need to find more technical details related to the website such as the IP address, 
+the type of hosting the website was using.
+Using the ViewDns (https://viewdns.info/)  info we can gather a lot of information related to a website
+The next thing that we need to find is the RepublicOfKoffee.com's IP address as of October 2016. 
+173.248.188.152
+
+Based on the other domains hosted on the same IP address, what kind of hosting service can we safely assume our target uses?
+Using the reverse lookup for this purpose. There is a long list of domain names associated with the IP we found earlier. 
+This means our target website owner is using a shared hosting service as it costs a lot less than the dedicated hosting service
+shared so the answer is : shared 
+How many times has the IP address changed in the history of the domain?
+Going back to the IP history, the IP address has changed 4 times 
+
+Task 5  Taking Off The Training Wheels : 
+
+What is the second nameserver listed for the domain?
+back to https://lookup.icann.org/en and check name server : 
+Nameservers:
+NS1.HEAT.NET
+NS2.HEAT.NET
+so the second name server is : NS2.HEAT.NET
+What IP address was the domain listed on as of December 2011?
+visit https://viewdns.info/ : The IP address of the domain that was listed on as December 2011 was : 72.52.192.240
+Based on domains that share the same IP, what kind of hosting service is the domain owner using?
+A shared hosting service is being used by the domain owner : shared
+On what date did was the site first captured by the internet archive? (MM/DD/YY format)
+
+check : https://web.archive.org/web/20220501000000*/heat.net the first one was at : 06/01/97
+
+What is the first sentence of the first body paragraph from the final capture of 2001?
+
+After years of great online gaming, it’s time to say good-bye.
+Using your search engine skills, what was the name of the company that was responsible for the original version of the site? 
+Company responsible for the original version of the site
+SegaSoft was the company responsible for the original version of the site so the answer was segasoft
+What does the first header on the site on the last capture of 2010 say?
+just check the 2010 captred : 
+Heat.net — Heating and Cooling
+Task 6  Taking A Peek Under The Hood Of A Website
+
+How many internal links are in the text of the article?
+In this section, we are instructed to navigate to a link and find out the following we will find : 5 
+
+How many external links are in the text of the article?
+1
+Website in the article's only external link ( that isn't an ad)
+External Link URL : purchase.org
+Try to find the Google Analytics code linked to the site
+Use the view page source on the article and find the google analytics code as seen below and ctrl+f and try to find UA- or google_analytics : 
+UA-251372-24
+Is the the Google Analytics code in use on another website? Yay or nay
+In order to find out wether this google analytic code is being used on any other website use nerdydata.com.
+This online tool will search through webpages and tell us if the query is found in any other websites
+
+nay
+Does the link to this website have any obvious affiliate codes embedded with it? Yay or Nay
+
+nay
+Task 7  Final Exam: Connect the Dots
+
+Use the tools in Task 4 to confirm the link between the two sites. Try hard to figure it out without the hint.
+In this task, we need to find a connection between our target site i.e. heat.net and the external link. There is no affiliate link associated
+with the website that could generate income to the business then what could be the connections.
+Let's find out. We revisit the IP history tool and find out that the external link(purchase.org) domain has the same owner as that of heat.net.
+liquid Web, L.L.C
+Task 8  Debriefing
+
+Click to complete
+No answer needed
+Task 9  Wrap-up
+A little web OSINT knowledge can go a long way in online investigations. A few examples of where it comes into play include any kind of business OSINT, online scams, or even political journalism. 
+If you would like to see a prime example of this kind of research being put into practice, I highly recommend checking out NixIntel's expose linking antifa.com to Russia, which is an amazing case study.
+
+Make sure to check out the other OSINT boxes out there such as:
+
+The Searchlight IMINT Room and Geolocation for Geolocation and Image Analysis
+The Google Dork room for advanced search engine operators
+The OhSINT room for a little extra IMINT practice
+There are also two fantastic podcasts that every OSINT practitioner should regularly listen to. The OSINT Curious podcast and The Privacy, Security, & OSINT Show. 
+
+Finally, a solid paid option for OSINT training that won't break the bank is TheOSINTion. If you enjoyed the content of this room you would LOVE the Business OSINT course they offer.
+I have no affiliation with the course other than being a satisfied customer.
